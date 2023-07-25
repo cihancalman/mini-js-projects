@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.image{
+    border-radius: 50px;
+    overflow: hidden;
+   max-width: 700px;
+    
+}
+.image img{
+    width: 100%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    
+}
+
+.buttons i:hover{
+    color: red;
+}
+.next {
+    margin-left:5rem ;
+    cursor: pointer;
+}
+.previous{
+    cursor: pointer;
+}
