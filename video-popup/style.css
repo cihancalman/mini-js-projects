@@ -1,0 +1,56 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 600px;
+    background-color: rgb(204, 201, 199);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 1.5rem;
+    border-radius: 30px;
+}
+.container img{
+    width: 100%;
+    height: 450px;
+}
+
+.container button{
+    background-color: red;
+    color: rgb(204, 201, 199) ;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+
+}
+
+.popup{
+    visibility:hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup video{
+    width: 550px;
+    height: 600px;
+    
+
+}
+.popup i{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+
+}
