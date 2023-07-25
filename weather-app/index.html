@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="mobile.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="search-box">
+            <p>Right now in </p> <input toUppercase oninput="expandInput(this)" type="text" placeholder=""  id="location"> <p id="weather-description">,</p>
+        </div>
+
+        <div class="weather">
+            <img class="weather-img" src="/images/cloud.png">
+            <h1 id="temperature">10</h1>
+            <div class="weather-detail">
+                <div class="wind">
+                    <!-- <img src="/images/wind.png"> -->
+                    <i class="fa-solid fa-wind fa-fade " style="color: #8f8585;"></i>
+                    <p><span id="wind">105</span>m/s</p>
+
+                </div>
+                <div class="feels-like">
+                    <i class="fa-solid fa-temperature-half fa-fade"></i>
+
+                    <p><span id="feels">0</span> <span id="radioC">°C</span></p>
+                </div>
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet fa-fade"></i>
+                    <p><span id="humidity">0</span> %</p>
+                </div>
+            </div>
+
+
+            <div id="city">
+                <h4></h4>
+            </div>
+
+
+        </div>
+
+        <div class="not-found">
+            <img src="images/404.png">
+            <p>Oops! Invalid Location!</p>
+        </div>
+
+      
+
+       
+
+
+    </div>
+
+    <div class="radio">
+        <input type="radio" class="radio_input" name="temp" value="metric" id="Celcius" checked>
+        <label class="radio_label" for="Celcius">°C</label>
+        <label > | </label>
+        <input type="radio" class="radio_input" name="temp" value="standard" id="Fahrenheit">
+        <label class="radio_label" for="Fahrenheit">°F</label>
+
+    </div>
+  
+
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
