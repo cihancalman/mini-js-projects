@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf7f7;
+}
+
+.container{
+    min-width: 80vh;
+    position: relative;
+    text-align: center;
+}
+.count{
+    color: #4a4747;
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom:0 ;
+    padding-top: 0;
+    padding-bottom: 4rem;
+}
+
+.loadingBar{
+    height: 1rem;
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    bottom:0px;
+}
+
+.back{
+    width: 100%;
+    background-color: #ddd8d8;
+}
+.front{
+    background-color: #5CF1C2;
+    width: 15%;
+}
+
+p{
+    text-align: center;
+    color: #0f4a37;
+    font-size: 1.2rem;
+}
